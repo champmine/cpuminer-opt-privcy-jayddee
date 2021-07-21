@@ -148,7 +148,7 @@ bool register_yespower_algo( algo_gate_t* gate )
   gate->optimizations = SSE2_OPT | SHA_OPT;
   gate->scanhash      = (void*)&scanhash_yespower;
   gate->hash          = (void*)&yespower_hash;
-  opt_target_factor = 65536.0;
+  opt_target_factor = 1.0;
   return true;
 };
 
